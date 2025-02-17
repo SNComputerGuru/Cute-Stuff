@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f1c6c6, #f2d1f0, #c1f7f7);
+    color: #4c4c4c;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fce3e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff5c8f;
+    margin: 0;
+}
+
+.message-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+    gap: 20px;
+}
+
+.message-card {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.message-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px 5px rgba(255, 92, 143, 0.5);
+}
+
+.message-card:active {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px 15px rgba(255, 92, 143, 1);
+}
+
+
+.message-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.message-card h3 {
+    font-size: 1.3em;
+    color: #ff5c8f;
+    margin: 10px 0;
+}
+
+.message-card p {
+    font-size: 1.1em;
+    color: #555555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fce3e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #777777;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.message-card.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+/* ................................ */
